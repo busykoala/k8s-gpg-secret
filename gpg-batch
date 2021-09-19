@@ -1,0 +1,12 @@
+%no-protection
+Key-Type: eddsa
+Key-Curve: Ed25519
+Key-Usage: sign
+Subkey-Type: ecdh
+Subkey-Curve: Curve25519
+Subkey-Usage: encrypt
+Name-Real: Kube ArgoCD
+Name-Email: info@busykoala.ch
+Name-Comment: GPG key for ArgoCD. Used to encrypt secrets for GitOps.
+Expire-Date: 0
+%commit
