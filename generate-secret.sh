@@ -17,7 +17,7 @@ gpg --armor --export-secret-keys "$KEY_ID" | tee > "keys/$KEY_ID"
 
 # generate and output kubernetes secret
 printf "\n\n*********************\n-----K8S SECRET:-----\n*********************\n\n"
-kubectl create secret generic argocd-gpg-key-secret --from-file "keys/$KEY_ID" --dry-run=client -o yaml
+kubectl create secret generic argocd-gpg-keys-secret --from-file "keys/$KEY_ID" --dry-run=client -o yaml
 
 # clean up
 rm -Rf keys .gnupg
